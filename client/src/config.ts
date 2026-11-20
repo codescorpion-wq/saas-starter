@@ -1,6 +1,7 @@
 // 👉 The one file to edit when you start a new product.
 export const product = {
-  name: "Your Product",
+  name: "saasfile",
+  company: "ClarityBridge Consulting", // legal owner shown in the footer
   tagline: "One sentence on the painful problem you solve.",
   description: "A short paragraph explaining who it's for and the outcome they get.",
   supportEmail: "hello@yourproduct.com",

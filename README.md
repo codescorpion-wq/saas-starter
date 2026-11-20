@@ -1,5 +1,7 @@
 # saas-starter
 
+Micro SaaS template for **saasfile**, a brand of **ClarityBridge Consulting**.
+
 Template for launching a micro SaaS. **Don't build products in this repo.** On GitHub, click **Use this template** and create a new repo for each product.
 
 **Stack:** React 19 + Vite + TypeScript + Tailwind v4 + shadcn/ui · Express 5 · Postgres + Drizzle · Better Auth (email/password + optional Google) · Stripe subscriptions · Resend email
@@ -24,7 +26,7 @@ Stripe webhooks locally: `stripe listen --forward-to localhost:3000/api/stripe/w
 
 ## Starting a new product (checklist)
 1. **Use this template**, then create a new repo (ideally in its own GitHub org if it might be sold).
-2. Edit `client/src/config.ts` (name, tagline, features, plans) and the `<title>` in `client/index.html`.
+2. Edit `client/src/config.ts` (product name, tagline, features, plans; `company` stays ClarityBridge Consulting) and the `<title>` in `client/index.html`.
 3. Change `--primary` in `client/src/index.css`.
 4. New Stripe product + price, then set `STRIPE_PRICE_PRO_MONTHLY`.
 5. Add your tables at the bottom of `server/src/db/schema.ts`, then run `npm run db:push`.

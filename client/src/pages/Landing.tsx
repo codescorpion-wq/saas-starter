@@ -52,7 +52,7 @@ export function Landing() {
       </section>
 
       <footer className="border-t py-8 text-center text-sm text-muted-foreground">
-        © {new Date().getFullYear()} {product.name} · <a href={`mailto:${product.supportEmail}`}>{product.supportEmail}</a>
+        © {new Date().getFullYear()} {product.company} · <a href={`mailto:${product.supportEmail}`}>{product.supportEmail}</a>
       </footer>
     </main>
   );
