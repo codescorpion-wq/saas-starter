@@ -2,8 +2,12 @@
   "name": "saas-starter",
   "private": true,
   "type": "module",
-  "workspaces": ["client", "server"],
+  "workspaces": [
+    "client",
+    "server"
+  ],
   "scripts": {
+    "setup": "node scripts/setup.mjs",
     "dev": "concurrently -n server,client -c blue,magenta \"npm run dev -w server\" \"npm run dev -w client\"",
     "build": "npm run build -w client && npm run build -w server",
     "start": "npm run start -w server",
@@ -14,5 +18,7 @@
   "devDependencies": {
     "concurrently": "^9.2.0"
   },
-  "engines": { "node": ">=20" }
+  "engines": {
+    "node": ">=20"
+  }
 }

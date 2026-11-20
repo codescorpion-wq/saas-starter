@@ -15,10 +15,11 @@ Template for launching a micro SaaS. **Don't build products in this repo.** On G
 ## Local setup
 ```bash
 npm install
-cp .env.example .env          # fill in DATABASE_URL and BETTER_AUTH_SECRET at minimum
-npm run db:push               # creates tables
-npm run dev                   # app: http://localhost:5173  ·  API: http://localhost:3000
+npm run setup
+npm run db:push
+npm run dev
 ```
+Then open http://localhost:5173. `npm run setup` creates `.env` with a fresh auth secret and a local database URL. If you use Railway or Neon for the database, paste its connection string into `DATABASE_URL` in `.env`.
 Stripe webhooks locally: `stripe listen --forward-to localhost:3000/api/stripe/webhook` and paste the `whsec_...` into `.env`.
 
 ## Starting a new product (checklist)
